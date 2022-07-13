@@ -1,0 +1,55 @@
+.movie-container {
+    // position:absolute;
+    // display: flex;
+    // flex-wrap: wrap;
+    // height: 400px;
+    // margin-top: 150px;
+
+    // display:flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // div {
+    // margin: 5px 20px 5px 20px;
+    // }
+
+    
+    .sticky {
+        position: fixed;
+        background-color: lightblue;
+
+    }
+    .date-container {
+        // overflow: hidden;
+        // height: 0;
+        
+        // position: fixed;
+        // height: 100px;
+        // top: 100px;
+        // width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+            div {
+            margin: 5px 20px 5px 20px;
+            }
+        
+        .sticky{
+            position: fixed;
+            // transition: width 2s;
+            background-color: lightgrey;
+            opacity: 0.5;
+            top:50px;
+
+            
+        }
+        mat-toolbar {
+            justify-content: center;
+            // position: -webkit-sticky; /* For macOS/iOS Safari */
+            // top: 0; /* Sets the sticky toolbar to be on top */
+        }
+        
+    }
+    
+
+}

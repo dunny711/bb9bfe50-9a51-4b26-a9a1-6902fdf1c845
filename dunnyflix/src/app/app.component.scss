@@ -1,0 +1,30 @@
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    // height: 100px;
+    top: 0;
+    width: 100%;
+    #searchIcon {
+        padding-left:25px;
+    }
+    .cart-container {
+        position: fixed;
+        right: 50px;
+    }
+  }
+.content-container {
+    margin-top: 100px;
+}
+
+
+// .header-container {
+    
+//     overflow: hidden;
+//     background-color: #333;
+//     position: fixed;
+//     height:100px;
+//     top:0;
+//     width: 100%;
+    
+  
+// }

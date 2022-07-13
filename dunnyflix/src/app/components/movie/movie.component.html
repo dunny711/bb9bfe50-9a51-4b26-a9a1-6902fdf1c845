@@ -1,0 +1,12 @@
+
+<div class="movie-container">
+    <div class="date-container" *ngFor="let movie_dict of movie_dicts; let i = index ">
+        <mat-toolbar style="width: 100%" class="not-sticky" id="{{i}}">{{movie_dict.date}}</mat-toolbar>
+        <div *ngFor="let movie of movie_dict.movies | searchFilter: searchText">
+            <app-movie-card [movie]="movie" (deleteMovie)="deleteItem($event)"></app-movie-card>
+
+        </div>
+
+    </div>
+       
+</div>

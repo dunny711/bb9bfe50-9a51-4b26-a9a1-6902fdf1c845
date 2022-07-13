@@ -1,0 +1,31 @@
+<!-- <mat-drawer-container class="drawer-container" [hasBackdrop]="true">
+  <mat-drawer #drawer>TEST</mat-drawer> -->
+<mat-drawer-container>
+  <mat-drawer #drawer position="end" style="position:fixed">
+    <app-shopping-cart></app-shopping-cart>
+  </mat-drawer>
+
+  <div class="navbar">
+    <mat-toolbar>
+      <mat-form-field class="example-form-field" appearance="fill">
+        <mat-label>Clearable input</mat-label>
+        <input matInput type="text" (keydown.enter)="submitSearch()" [(ngModel)]="searchText">
+
+        <button *ngIf="search" matSuffix mat-icon-button aria-label="Clear" (click)="search=''; searchText=''">
+          <mat-icon>close</mat-icon>
+        </button>
+
+      </mat-form-field>
+      <div (click)="drawer.toggle()" class="cart-container">
+        <mat-icon matBadge="{{shoppingItems}}" matBadgeColor="warn">shopping_cart</mat-icon>
+    </div>
+    </mat-toolbar>
+  </div>
+
+  <!-- <mat-drawer-content> -->
+    <div class="content-container">
+      <app-movie [searchText]="searchText"></app-movie>
+    </div>
+  </mat-drawer-container>
+  <!-- </mat-drawer-content> -->
+<!-- </mat-drawer-container> -->

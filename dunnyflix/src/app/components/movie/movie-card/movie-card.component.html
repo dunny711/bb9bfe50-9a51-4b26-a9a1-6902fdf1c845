@@ -1,0 +1,43 @@
+<mat-card class="example-card">
+         <mat-card-header class="header-card">
+        <div mat-card-avatar class="example-header-image">
+            <img src="{{movie.flyerFront}}" onError="this.src='assets/images/tofu.png'">
+        </div>
+        <mat-card-title>{{movie.title}}</mat-card-title>
+        <mat-card-subtitle>{{movie.date}}</mat-card-subtitle>
+        </mat-card-header>
+        <div class="image-container">
+            <img mat-card-image src="{{movie.flyerFront}}" onError="this.src='assets/images/tofu.png'">
+        </div>
+
+        <mat-card-content (click)="navigateToMaps(movie.venue.direction)" >
+            <mat-icon>location_on</mat-icon>
+            {{movie.venue.name}}       
+        </mat-card-content>
+        <mat-card-actions>
+        <button (click)=addMovie(movie) mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+            <mat-icon>add</mat-icon>
+        </button>
+        </mat-card-actions> 
+</mat-card>
+<!-- <div class="example-card">
+    <div class="header-card">
+            <img src="{{movie.flyerFront}}">
+        <p>{{movie.title}}</p>
+        <p>{{movie.date}}</p>
+    </div>
+    
+    
+    <div class="image-container">
+        <img src="{{movie.flyerFront}}">
+    </div>
+    <div (click)="navigateToMaps(movie.venue.direction)">
+        <mat-icon>location_on</mat-icon>
+        {{movie.venue.name}}
+    </div>
+    <div>
+        <button (click)=addMovie(movie)>
+            <mat-icon>add</mat-icon>
+        </button>
+    </div>
+</div> -->
